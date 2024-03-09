@@ -1,0 +1,123 @@
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #010409;
+    color: whitesmoke;
+}
+
+header {
+    display: block;
+    background-color: #0D1117;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header img{
+    text-align: center;
+    width: 30%;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #0D1117;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.technologies-container {
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #30363D;
+    padding: 35px 0 10px 20px;
+    grid-template-columns: repeat(5, 1fr);
+    display: grid;
+    gap: 10px;
+}
+
+.bubble {
+    margin-right: 10px;
+    animation: floatBubble 4s ease-in-out infinite;
+}
+
+@keyframes floatBubble {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.container{
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: #30363D;
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+.big-hover{
+    padding: 0 30px 0 30px;
+    transition: transform 1.0s;
+}
+
+.big-hover:hover{
+    transform: rotate(360deg);
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project-item{
+    background-color: #161B22;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 2fr 0.1fr;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.project-item h3{
+    padding-bottom: 3%;
+    border-bottom: 2px solid black;
+}
+
+.project-item:hover{
+    background-color: #30363D;
+}
+
+.project-link img:hover{
+    width: 30%;
+}
+
+footer{
+    font-size: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .projects-container{
+        display: block;
+    }
+
+    .technologies-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
