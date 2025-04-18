@@ -102,6 +102,11 @@ section {
     width: 30%;
 }
 
+.cert{
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
 footer{
     font-size: 10px;
 }
