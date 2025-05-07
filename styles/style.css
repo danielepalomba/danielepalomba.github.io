@@ -27,33 +27,6 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.technologies-container {
-    border: 1px solid white;
-    border-radius: 20px;
-    background-color: #30363D;
-    padding: 35px 0 10px 20px;
-    grid-template-columns: repeat(5, 1fr);
-    display: grid;
-    gap: 10px;
-}
-
-.bubble {
-    margin-right: 10px;
-    animation: floatBubble 4s ease-in-out infinite;
-}
-
-@keyframes floatBubble {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-}
-
 .container{
     border-radius: 20px;
     border: 1px solid white;
